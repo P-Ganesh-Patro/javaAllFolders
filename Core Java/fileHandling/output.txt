@@ -1,0 +1,24 @@
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
+public class FileStreams {
+    public static void main(String[] args) {
+        try {
+
+            FileInputStream fileInputStream = new FileInputStream("input.txt"); // read
+            FileOutputStream fileOutputStream = new FileOutputStream("output.txt"); // write
+            int byteData;
+            while ((byteData = fileInputStream.read()) != 1) {
+                fileOutputStream.write(byteData);
+            }
+            fileInputStream.close();
+            fileOutputStream.close();
+            System.out.println("Byte streams copy done !");
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+}

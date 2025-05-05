@@ -1,0 +1,1 @@
+Unicode is a system for encoding characters that uses a unique number for each character. This allows computers to represent and exchange text from different languages, scripts, and writing systems. 
